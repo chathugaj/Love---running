@@ -250,35 +250,62 @@ hr {
     height: 1200px;
     margin: 0 auto;
   }
+
+  #welcome {
+    padding: 30px 0;
+    margin: 0;
+  }
+
+  #left-about,
+  #right-about {
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
+
+  #center-about {
+    clear: both;
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
+
+  hr {
+    display: none;
+  }
 }
 
-#welcome {
-  padding: 30px;
-  margin: 0;
-}
-
-#left-about,
-#right-about {
-  width: 100%;
-  float: left;
-  padding: 0;
-}
-
-#center-about {
-  clear: both;
-  width: 100%;
-  float: left;
-  padding: 0;
-}
-
-hr {
-  display: none;
-}
 /* For medium screen sizes from 950px wide and down*/
-#menu {
-  clear: left;
-  float: left;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  line-height: 25px;
+@media screen and (max-width: 950px) {
+  #menu {
+    clear: left;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+  #cover-set {
+    left: 0;
+  }
+  #club-ethos {
+    width: 90%;
+    height: 1200px;
+    margin: 0 auto;
+  }
+
+  .left-about-heading,
+  .right-about-heading {
+    width: inherit;
+  }
+
+  .left-about-heading h2,
+  .right-about-heading h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .left-about-heading p,
+  .right-about-heading p {
+    text-align: center;
+    padding: 0 20px;
+  }
 }
